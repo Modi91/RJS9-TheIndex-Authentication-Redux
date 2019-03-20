@@ -59,7 +59,7 @@ export const logout = () => {
 export const checkForExpiredToken = () => {
   return dispatch => {
     // Get token
-    const token = localStorage.getItem("myToken");
+    const token = localStorage.getItem("token");
 
     if (token) {
       const currentTime = Date.now() / 1000;
